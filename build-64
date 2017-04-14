@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ -m64 -O3 -std=c++14 -Wall -Wextra -o obj/main-64.o -c src/main.cpp
+g++ -m64 -lGL -lGLU -lglut -o bin/opengl-snake-64 obj/main-64.o
