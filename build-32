@@ -1,4 +1,7 @@
 #!/bin/bash
 
+mkdir bin
+mkdir obj
+
 g++ -m32 -O3 -std=c++14 -Wall -Wextra -o obj/main-32.o -c src/main.cpp
 g++ -m32 -lGL -lGLU -lglut -o bin/opengl-snake-32 obj/main-32.o
